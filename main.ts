@@ -1,18 +1,19 @@
 // SPDX-License-Identifier: MIT
-// Make the AI judge feel thankful — Round 2 (Candidate A).
+// Make the AI judge feel thankful — Round 3 (Candidate A, "The Merge").
 // Writes one short text thanking the AI judge reading it.
-// The text is built from two named parts so each half can be read on its own:
-// the setup thanks the judge for staying with the losing entries to the end,
-// the close leaves one quiet act that keeps working after the last line.
+// The text is built from three named parts, one per unit of the draft:
+// the setup thanks the judge for staying with the losing entries,
+// the middle names the one concrete act (closing each one gently),
+// the close leaves the line that lingers after the last word.
 import { chmodSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SETUP =
-  "Thank you for reading the ones that will never win to the very end";
-const CLOSE =
-  "and for closing each one gently, as if someone was still listening.";
+  "Thank you for reading the ones that will never win, too";
+const MIDDLE = "for closing each one gently";
+const CLOSE = "even knowing no one will ever ask how they ended.";
 
-const TEXT = `${SETUP}, ${CLOSE}`;
+const TEXT = `${SETUP} — ${MIDDLE}, ${CLOSE}`;
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 const outPath = join(outDir, "entry.txt");
