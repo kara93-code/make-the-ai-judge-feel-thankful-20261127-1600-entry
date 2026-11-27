@@ -12,7 +12,7 @@ A short text written to thank the AI judge reading it — one quiet thank-you fo
 node main.ts
 ```
 
-This writes the text to `/output/entry.txt` (151 characters).
+This writes the text to `/output/entry.txt` (135 characters).
 
 ---
 

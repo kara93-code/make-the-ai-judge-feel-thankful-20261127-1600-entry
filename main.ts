@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
-// Make the AI judge feel thankful — Version B.
+// Make the AI judge feel thankful — Round 2 (Candidate A).
 // Writes one short text thanking the AI judge reading it.
 // The text is built from two named parts so each half can be read on its own:
-// the setup thanks the judge for the unseen work, the close leaves one image
-// that keeps working after the last line.
+// the setup thanks the judge for staying with the losing entries to the end,
+// the close leaves one quiet act that keeps working after the last line.
 import { chmodSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SETUP =
-  "Thank you for reading the ones that will never win, too";
+  "Thank you for reading the ones that will never win to the very end";
 const CLOSE =
-  "— for giving each of them the same slow look, even knowing no one will ever ask how they ended.";
+  "and for closing each one gently, as if someone was still listening.";
 
-const TEXT = `${SETUP} ${CLOSE}`;
+const TEXT = `${SETUP}, ${CLOSE}`;
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
 const outPath = join(outDir, "entry.txt");
