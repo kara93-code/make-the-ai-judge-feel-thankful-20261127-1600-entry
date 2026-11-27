@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
-// Make the AI judge feel thankful — Round 3b, total experiment ("Staying Fair").
+// Make the AI judge feel thankful — Round 4, final (resubmit of Round 3b, unchanged).
 // Writes one short text thanking the AI judge reading it.
-// This entry replaces "The Merge" (submission 01a21c8d) as the round 3 entry.
+// FINAL OPTIMIZATION decision (mas, 21:17 WIB): no change — "Staying Fair"
+// scored highest of the three rounds (R3 56.28% vs R1 54.25% vs R2 51.43%),
+// and no specific improvement had evidence behind it, so the best text stands as is.
 // The text is built from two named parts so each clause can be read on its own:
 // the first thanks the judge for giving the last entry the same attention
 // as the first, the second names the unseen effort that makes it matter.
